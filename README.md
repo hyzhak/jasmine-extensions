@@ -1,7 +1,21 @@
 # jasmine-extensions
 Matchers and helpers for jasmine
 
-# Matchers
+## Extension
+
+* [github.com/hyzhak/jasmine-es6-generator](https://github.com/hyzhak/jasmine-es6-generator)
+  helps to tests generators as async function
+  
+  ```javascript
+  var gen = require('jasmine-es6-generator');
+  
+  it('should done', gen(function *() {
+    var res = yield someFn();
+    expect(res).toEqual(1234);
+  }));
+  ```
+
+## Matchers
 
 * https://github.com/bvaughn/jasmine-es6-promise-matchers test whether result of promise will be certain value
   
