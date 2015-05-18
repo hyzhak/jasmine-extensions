@@ -8,4 +8,8 @@ Matchers and helpers for jasmine
   expect(promise).toBeResolvedWith('something', done);
   ```
   
+* https://github.com/hyzhak/to-have-property test whether object has projerty (with certain value)
+  ```javascript
+  expect({ y: 123}).toHaveProperty('y', 123);
+  ```
 * 
