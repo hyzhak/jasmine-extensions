@@ -27,10 +27,12 @@ Matchers and helpers for jasmine
   
   ```javascript
   expect({ y: 123}).toHaveProperty('y', 123);
+  expect({ x: 1, y: 2, z: 3}).toHaveProperties({'x': 1, 'y': 2});
   ```
   
 * https://github.com/hyzhak/to-have-method test whether object has method
  
   ```javascript
   expect({ m: function() {} }).toHaveProperty('m');
+  expect({ m1: function() {}, m2: function() {} }).toHaveMethods('m1', 'm2');
   ```
