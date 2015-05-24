@@ -36,3 +36,8 @@ Matchers and helpers for jasmine
   expect({ m: function() {} }).toHaveProperty('m');
   expect({ m1: function() {}, m2: function() {} }).toHaveMethods('m1', 'm2');
   ```
+  
+  [test](test)
+  [/test](/test)
+  [/test.md](/test.md)
+  [/test.html](/test.html)
