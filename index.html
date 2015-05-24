@@ -61,12 +61,19 @@ it(<span class="pl-s"><span class="pl-pds">'</span>should done<span class="pl-pd
 <li>
 <p><a href="https://github.com/hyzhak/to-have-property">https://github.com/hyzhak/to-have-property</a> test whether object has projerty (with certain value)</p>
 
-<div class="highlight highlight-javascript"><pre>expect({ y<span class="pl-k">:</span> <span class="pl-c1">123</span>}).toHaveProperty(<span class="pl-s"><span class="pl-pds">'</span>y<span class="pl-pds">'</span></span>, <span class="pl-c1">123</span>);</pre></div>
+<div class="highlight highlight-javascript"><pre>expect({ y<span class="pl-k">:</span> <span class="pl-c1">123</span>}).toHaveProperty(<span class="pl-s"><span class="pl-pds">'</span>y<span class="pl-pds">'</span></span>, <span class="pl-c1">123</span>);
+expect({ x<span class="pl-k">:</span> <span class="pl-c1">1</span>, y<span class="pl-k">:</span> <span class="pl-c1">2</span>, z<span class="pl-k">:</span> <span class="pl-c1">3</span>}).toHaveProperties({<span class="pl-s"><span class="pl-pds">'</span>x<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-c1">1</span>, <span class="pl-s"><span class="pl-pds">'</span>y<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-c1">2</span>});</pre></div>
 </li>
 <li>
 <p><a href="https://github.com/hyzhak/to-have-method">https://github.com/hyzhak/to-have-method</a> test whether object has method</p>
 
-<div class="highlight highlight-javascript"><pre>expect({ <span class="pl-en">m</span>: <span class="pl-k">function</span>() {} }).toHaveProperty(<span class="pl-s"><span class="pl-pds">'</span>m<span class="pl-pds">'</span></span>);</pre></div>
+<div class="highlight highlight-javascript"><pre>expect({ <span class="pl-en">m</span>: <span class="pl-k">function</span>() {} }).toHaveProperty(<span class="pl-s"><span class="pl-pds">'</span>m<span class="pl-pds">'</span></span>);
+expect({ <span class="pl-en">m1</span>: <span class="pl-k">function</span>() {}, <span class="pl-en">m2</span>: <span class="pl-k">function</span>() {} }).toHaveMethods(<span class="pl-s"><span class="pl-pds">'</span>m1<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>m2<span class="pl-pds">'</span></span>);</pre></div>
+
+<p><a href="test">test</a>
+<a href="/test">/test</a>
+<a href="/test.md">/test.md</a>
+<a href="/test.html">/test.html</a></p>
 </li>
 </ul>
       </section>
